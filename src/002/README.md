@@ -26,3 +26,12 @@ Boolean
 > :type [1,2,3]
 Array Int
 ```
+
+```
+$ bower install purescript-globals
+$ pulp psci
+> :browse Global
+> import Global (encodeURIComponent)
+> encodeURIComponent "http://localhost/path/to?query=string#flagments"
+"http%3A%2F%2Flocalhost%2Fpath%2Fto%3Fquery%3Dstring%23flagments"
+```
